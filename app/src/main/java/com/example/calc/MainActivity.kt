@@ -63,7 +63,14 @@ fun TipCalculatorApp(modifier: Modifier = Modifier) {
             fontWeight = FontWeight.Bold,
             modifier = Modifier.padding(bottom = 24.dp)
         )
+        Spacer(modifier = Modifier.height(16.dp))
 
+        OutlinedTextField(
+            value = numDishes,
+            onValueChange = { numDishes = it },
+            label = { Text("Количество блюд") },
+            modifier = Modifier.fillMaxWidth()
+        )
 
 
 
